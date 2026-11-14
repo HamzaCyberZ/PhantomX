@@ -1,4 +1,4 @@
-import { NetworkDevice } from '../types/network';
+import type { NetworkDevice } from '../types/network.ts';
 
 export const INITIAL_DEVICES: NetworkDevice[] = [
   {

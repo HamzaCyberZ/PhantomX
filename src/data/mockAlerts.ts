@@ -1,4 +1,4 @@
-import { SecurityAlert } from '../types/network';
+import type { SecurityAlert } from '../types/network.ts';
 
 export const INITIAL_ALERTS: SecurityAlert[] = [
   {

@@ -1,4 +1,4 @@
-import { ProtocolShare, SuspiciousFlow, TrafficPoint } from '../types/network';
+import type { ProtocolShare, SuspiciousFlow, TrafficPoint } from '../types/network.ts';
 
 export const TRAFFIC_SERIES_24H: TrafficPoint[] = [
   { timeLabel: '00:00', inboundMbps: 112, outboundMbps: 68, anomalousMbps: 4, packetCount: 14200 },

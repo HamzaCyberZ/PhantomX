@@ -1,4 +1,4 @@
-import { PortScanEvent } from '../types/network';
+import type { PortScanEvent } from '../types/network.ts';
 
 export const INITIAL_PORT_SCANS: PortScanEvent[] = [
   {

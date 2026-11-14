@@ -2,13 +2,13 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
-import { createClient, SupabaseClient } from '@supabase/supabase-js';
+import { createClient, type SupabaseClient } from '@supabase/supabase-js';
 import { GoogleGenAI, Type } from '@google/genai';
-import { INITIAL_DEVICES } from './src/data/mockDevices';
-import { INITIAL_ALERTS } from './src/data/mockAlerts';
-import { INITIAL_SUSPICIOUS_FLOWS } from './src/data/mockTraffic';
-import { INITIAL_PORT_SCANS } from './src/data/mockPortScans';
-import { INITIAL_REPORTS, INITIAL_RISK_FACTORS } from './src/data/mockRiskAndReports';
+import { INITIAL_DEVICES } from './src/data/mockDevices.ts';
+import { INITIAL_ALERTS } from './src/data/mockAlerts.ts';
+import { INITIAL_SUSPICIOUS_FLOWS } from './src/data/mockTraffic.ts';
+import { INITIAL_PORT_SCANS } from './src/data/mockPortScans.ts';
+import { INITIAL_REPORTS, INITIAL_RISK_FACTORS } from './src/data/mockRiskAndReports.ts';
 
 dotenv.config();
 

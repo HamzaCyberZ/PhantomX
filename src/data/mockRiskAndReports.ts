@@ -1,4 +1,4 @@
-import { RiskFactor, SecurityReport, UserProfile } from '../types/network';
+import type { RiskFactor, SecurityReport, UserProfile } from '../types/network.ts';
 
 export const INITIAL_RISK_FACTORS: RiskFactor[] = [
   {

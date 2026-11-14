@@ -1,6 +1,10 @@
 {
   "name": "NetPhantom AI",
   "description": "Intelligent Network Behaviour Guardian for monitoring connected devices, detecting unknown endpoints, analyzing suspicious traffic, and managing network security posture.",
-  "requestFramePermissions": ["camera"],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
