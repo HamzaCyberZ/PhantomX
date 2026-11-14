@@ -1,0 +1,77 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --font-display: 'Outfit', system-ui, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --np-canvas: #F3F6FA;
+  --np-surface: #FFFFFF;
+  --np-surface-elevated: #F8FAFC;
+  --np-border: rgba(15, 23, 42, 0.10);
+  --np-border-subtle: rgba(15, 23, 42, 0.06);
+  --np-text-primary: #0B1120;
+  --np-text-secondary: #475569;
+  --np-text-muted: #64748B;
+  --np-accent: #0284C7;
+  --np-accent-soft: rgba(2, 132, 199, 0.10);
+  --np-hero-glow: radial-gradient(600px circle at 10% 0%, rgba(14, 165, 233, 0.09), transparent 65%);
+}
+
+.dark {
+  --np-canvas: #060911;
+  --np-surface: #0D1422;
+  --np-surface-elevated: #131C2E;
+  --np-border: rgba(148, 163, 184, 0.14);
+  --np-border-subtle: rgba(148, 163, 184, 0.08);
+  --np-text-primary: #F1F5F9;
+  --np-text-secondary: #94A3B8;
+  --np-text-muted: #64748B;
+  --np-accent: #38BDF8;
+  --np-accent-soft: rgba(56, 189, 248, 0.12);
+  --np-hero-glow: radial-gradient(640px circle at 15% 0%, rgba(56, 189, 248, 0.11), transparent 65%);
+}
+
+@layer base {
+  html,
+  body {
+    background-color: var(--np-canvas);
+    color: var(--np-text-primary);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.px-hero-surface {
+  background-color: var(--np-surface);
+  background-image: var(--np-hero-glow);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
